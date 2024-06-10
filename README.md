@@ -112,7 +112,7 @@ When an error message is detected, the in_sync flag is set to False.
 A direct correlation exists between the in_sync flag and overdraft occurrences.
 This correlation is demonstrated by analyzing the overdraft_df dataframe, which shows that over 99% of negative paymentBalance (indicative of overdraft) entries have the in_sync flag set to False.
 
-![Overdraft Count VS in_sync](Data Viz/in_sync_tf.png)
+![in_sync_tf](https://github.com/shaikharfat/TheCaloProject/assets/36470347/efcc157c-92eb-4ce5-bba9-2a830d0088e7)
 
 Overdraft DataFrame (**overdraft_df**) as shown below:
 
@@ -139,7 +139,7 @@ By analyzing the user IDs in the random (overdraft) user list, it is evident tha
 A sample set of user IDs who have experienced overdrafts.
 Analysis shows that the in_sync flag for these users transitions to False prior to the overdraft, demonstrating the predictive nature of the OPP.
 
-![Overdraft Count VS in_sync](Data Viz/in_sync_vs_user.png)
+![in_sync_vs_user](https://github.com/shaikharfat/TheCaloProject/assets/36470347/ceee9ad7-d6a8-47b8-b936-4c80fcdf40b2)
 
 
 | userId                               |   paymentBalance | in_sync   | date_time                        |
@@ -162,7 +162,7 @@ Analysis shows that the in_sync flag for these users transitions to False prior 
 ### Eid al-Fitr Holiday Impact:
 The visualizations show a significant upward trend in orders during the EID holidays, leading to the largest spike in orders observed. This highlights the impact of major events like EID on order volumes.
 
-![eid_trend](Data Viz/eid.png)
+![eid](https://github.com/shaikharfat/TheCaloProject/assets/36470347/37be8a30-73cf-41eb-a4da-e418174b2176)
 
 **Trend Analysis:**
 The spike during EID suggests that similar events can have a substantial effect on customer behavior and order trends, indicating the importance of preparing for such events.
@@ -170,7 +170,7 @@ The spike during EID suggests that similar events can have a substantial effect 
 ### Countrywise Order Contribution
 The pie chart illustrates the contribution of different currencies to the overall order volume, providing insights into the geographic distribution of orders.
 
-![Countrywise Order](Data Viz/country_contri.png)
+![country_contri](https://github.com/shaikharfat/TheCaloProject/assets/36470347/590c9fa3-4c8d-4946-b1b6-70c04e550e5e)
 
 Key Observations:
 The majority of orders are contributed by BHD (Bahraini Dinar), as indicated by the large green segment.
@@ -180,20 +180,20 @@ A portion of the data is marked as Null, indicating orders with unspecified or u
 This visualization helps in understanding the distribution of orders across different countries, allowing for targeted marketing and resource allocation based on regional demand.
 ### Top Calo User
 
-![Countrywise Order](Data Viz/top_users.png)
+![top_users](https://github.com/shaikharfat/TheCaloProject/assets/36470347/a79b6c45-a8e5-43a7-a8de-2cbe15c4911b)
 This bar chart visualizes the average amount spent by different users, identified by their unique User IDs. The chart allows for quick comparison of average spending across users, highlighting the top spenders.
 
 ## Anomalities
 ### Timestamp Anomalies:
 
 The analysis identified several instances of unusually long intervals between log entries. These gaps may indicate periods of inactivity or potential issues with logging mechanisms.
-![Countrywise Order](Data Viz/time_anom.png)
+![time_anom](https://github.com/shaikharfat/TheCaloProject/assets/36470347/dd326988-9daa-4959-a29c-ed9a296692bd)
 Each point represents the time difference between consecutive log entries, plotted over the timeline. Unusually long intervals are easily identifiable as spikes in the graph.
 
 ### Error Anomalities:
 
 The logs contain messages indicating subscription balance and payment balance synchronization issues.
-![Countrywise Order](Data Viz/error_anom.png)
+![error_anom](https://github.com/shaikharfat/TheCaloProject/assets/36470347/dc5f6349-2888-43f8-8fa5-ead3c54ecbe5)
 
 The identified errors occurred multiple times, with specific details about transaction IDs, user IDs, and balances.
 
