@@ -1,7 +1,3 @@
-docker pull arfatshaikh/thecaloproject:v1.0
-docker run arfatshaikh/thecaloproject:v1.0
-
-Python 2.7 Python 3.5 License
 # The Calo Project
 
 This project is based on transaction logs and aims to generate 
